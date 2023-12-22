@@ -41,9 +41,15 @@
             <option value="vacation">Vacation</option>
           </select>
         </div>
-        <button type="button" class="btn btn-primary" onclick="addExpense()">
-          Add Expense
-        </button>
+        <button type="button" class="btn btn-primary" id="addBtn">
+          Add Expense</button
+        ><!-- Add this p tag with Bootstrap classes for styling -->
+        <p
+          id="warningMessage"
+          class="text-danger mt-2 mb-0 font-size-lg d-none"
+        >
+          *Please fill in all fields
+        </p>
       </form>
 
       <div id="expenseList" class="mt-4 row">
